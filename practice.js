@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Dennis",
+  age: 45
+}
+//alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: "Metallica",
+  food: "Thai",
+  book: "Bourne",
+  person: "Mom",
+  movie: "Matrix",
+  holiday: "All Saints Day"
+}
 
 
 /*
@@ -34,6 +45,8 @@
 */
 
 //Code here
+favoriteThings.car = "Sport"
+favoriteThings.brand = "BMW"
 
 
 
@@ -42,6 +55,8 @@
 */
 
 //Code here
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 
@@ -56,16 +71,17 @@
 */
 
 //Code here
-
-
+var backPack = {}
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'Blue'
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
-
+//alert(backPack)
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+//console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -89,7 +105,8 @@ var user2 = {
   username: 'tylermcginnis33'
 };
 // Do not edit the code above.
-
+user2.name = "Tyler S. McGinnis"
+user2.email = 'tyler.mcginnis@devmounta.in'
 /* 
   Let's say I, the user, decided to change my name and email address to the following:
   name -> 'Tyler S. McGinnis' and email -> 'tyler.mcginnis@devmounta.in'. 
@@ -120,7 +137,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {}
 
 
 /*
@@ -129,35 +146,57 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = function(){alert('hello')}
+methodCollection.logHello = function(){console.log('hello')}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
-
+methodCollection.alertHello();
+methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
-
 /* 
   Create a function called makePerson which takes in name, birthday, ssn as its parameters. 
   Return a new object with all of the information that you passed in.
 */
 
 //Code Here
-
-
-
+function makePerson(name, birthday, ssn){
+  var obj = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  };
+  return obj;
+}
 ////////// PROBLEM 7 //////////
-
 /*
   Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
-
 //Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  var obj = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  
+  return obj;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
